@@ -1,0 +1,56 @@
++font-face('GothamPro', '../fonts/GothamPro/GothaProReg', otf)
++font-face('GothamProMedium', '../fonts/GothamPro/GothaProMed', otf)
++font-face('GothamProBold', '../fonts/GothamPro/GothaProBol', otf)
++font-face('OpenSans', '../fonts/OpenSans/OpenSans-Regular', ttf)
++font-face('OpenSansLight', '../fonts/OpenSans/OpenSans-Light', ttf)
++font-face('OpenSansBold', '../fonts/OpenSans/OpenSans-Bold', ttf)
++font-face('OpenSansItalic', '../fonts/OpenSans/OpenSans-Italic', ttf)
++font-face('Roboto', '../fonts/Roboto/Roboto-Regular', ttf)
++font-face('RobotoMedium', '../fonts/Roboto/Roboto-Medium', ttf)
++font-face('RobotoBold', '../fonts/Roboto/Roboto-Bold', ttf)
+
+*
+  box-sizing: border-box
+  outline: none
+
+body
+  font-family: $font-opensans
+  color: $color-text
+  line-height: 20px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: $color-almost-black
+  font-family: $font-roboto
+
+h1
+  font-size: 35px
+  margin-bottom: 15px
+
+h2
+  font-size: 22px
+
+h3
+  font-size: 16px
+  margin-bottom: 10px
+
+hr
+  border: none
+  height: 1px
+  background-color: $color-light-gray
+  margin-top: 30px
+
+button
+  cursor: pointer
+  &:active
+    text-indent: 0
+    padding: 0
+
+.wrapper
+  width: 960px
+  margin: 0 auto
+  padding: 0 40px

@@ -1,0 +1,24 @@
+.grid-type
+
+  > .item
+    display: inline-flex
+    padding: 5px 7px
+    border: 1px solid $color-gray
+    background: $color-white
+    cursor: pointer
+
+    &:first-of-type
+      border-right: none
+
+    &:last-of-type
+      border-left: none
+
+    &.-active
+      background: $color-red
+      border-color: $color-red
+
+      > svg
+        fill: $color-white
+
+  > .item > svg
+    fill: $color-dark-gray

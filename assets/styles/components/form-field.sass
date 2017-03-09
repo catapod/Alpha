@@ -1,0 +1,115 @@
+.form-field
+  
+  > .checkbox
+    display: none
+
+    &:checked + label
+
+      &:before
+        background: $color-red
+        border-color: $color-red
+
+      > svg
+        display: block
+        position: absolute
+        top: 50%
+        left: 3px
+        transform: translateY(-50%)
+
+    & + label
+      position: relative
+      cursor: pointer
+      padding-left: 25px
+
+      > svg
+        display: none
+      
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        min-width: 15px
+        min-height: 14px
+        border: 1px solid $color-gray
+        background: $color-white
+
+  > .label
+    font-size: 14px
+    color: $color-dark-gray
+    display: block
+    margin-bottom: 5px
+
+  > .input,
+  > .textarea
+    font-size: 14px
+    color: $color-text
+    padding: 10px
+    border: 1px solid $color-gray
+    width: 100%
+
+  > .textarea
+    font:
+      family: 'OpenSans'
+      size: 14px
+    line-height: 20px
+    resize: vertical
+
+  > .file
+    cursor: pointer
+    position: relative
+
+    > .shell
+      height: 40px
+      width: 100%
+      border: 1px solid $color-gray
+
+    > .shell > .svg-icon
+      width: 20px
+      height: 5px
+      fill: $color-dark-gray
+      position: absolute
+      right: 5px
+      top: 50%
+      transform: translateY(-50%)
+
+    &:hover > .shell > .svg-icon
+      fill: $color-red
+
+    > input
+      display: none
+
+    > .loaded
+      color: $color-red
+      transition: color .3s ease
+      margin-top: 15px
+      display: block
+      font-size: 14px
+      position: relative
+
+      &:hover
+        color: darken($color-red, 15%)
+
+    > .loaded > .remove
+      position: absolute
+      display: block
+      width: 20px
+      height: 20px
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+
+      &:after
+        content: "✖"
+        color: $color-red
+        position: absolute
+        width: 20px
+        height: 20px
+        top: 0
+        left: 0
+        text-align: center
+        transition: color .5s ease
+
+      &:hover:after
+        color: darken($color-red, 20%)

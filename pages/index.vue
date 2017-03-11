@@ -27,10 +27,10 @@
         .wrapper
           .sort-tools
             .grid-type
-              .item
+              .item.-active
                 svg.svg-icon.-card_view(role="img" title="card_view")
                   use(xlink:href="icons.svg#icon-card_view")
-              .item.-active
+              .item
                 svg.svg-icon.-list_view(role="img" title="list_view")
                   use(xlink:href="icons.svg#icon-list_view")
             .sort-tools-sortby

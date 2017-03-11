@@ -2,9 +2,9 @@
   $src: null
   $eot-src: null
 
-  $extmods: ( eot: "?iefix", svg: "#" + $name)
+  $extmods: ( eot: "?#iefix", svg: "#" + $name)
 
-  $formats: (otf: "opentype", ttf: "truetype")
+  $formats: (otf: "opentype", ttf: "truetype", eot: "embedded-opentype")
 
   @each $ext in $exts
     $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext)

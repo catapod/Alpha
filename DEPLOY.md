@@ -1,6 +1,9 @@
 ## Установка и настройка
 
 ### Для разработки
+
+> Требуется устаносить [nodejs](https://nodejs.org)
+
 ``` bash
 # установка зависимостей
 $ npm install
@@ -10,6 +13,9 @@ $ npm run dev
 ```
 
 ### Для продакшена
+
+> Требуется установить [docker](https://www.docker.com/) 
+
 ``` bash
 git clone git@github.com:kursomir/Alpha.git
 cd Alpha && docker build -t kursomir-alpha .
